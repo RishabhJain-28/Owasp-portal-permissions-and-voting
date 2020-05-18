@@ -1,0 +1,4 @@
+{
+	"jwtPrivateKey": "test123",
+	"dbConnectionString": "mongodb://localhost/OWASP_BACKEND"
+}
