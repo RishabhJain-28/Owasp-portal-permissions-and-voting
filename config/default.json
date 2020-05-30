@@ -1,4 +1,5 @@
 {
 	"jwtPrivateKey": "test123",
-	"dbConnectionString": "mongodb://localhost/OWASP_BACKEND"
+	"dbConnectionString": "mongodb://localhost/OWASP_BACKEND",
+	"pusherSecret": "e3ac192af2da8391c8cd"
 }

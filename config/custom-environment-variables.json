@@ -1,4 +1,5 @@
 {
 	"jwtPrivateKey": "jwtPrivateKey",
-	"dbConnectionString": "db"
+	"dbConnectionString": "db",
+	"pusherSecret": "pusherSecretKey"
 }

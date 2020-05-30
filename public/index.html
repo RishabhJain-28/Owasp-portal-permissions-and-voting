@@ -9,23 +9,16 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>Voting</h1>
-			<button class="waves-effect waves-light btn" id="call-vote">Call vote</button>
-
-			<form id="vote">
-				<p>
-					<label>
-						<input name="vote" type="radio" value="yes" />
-						<span>YES</span>
-					</label>
-					<br />
-					<label>
-						<input name="vote" type="radio" value="no" />
-						<span>NO</span>
-					</label>
-				</p>
-				<input type="submit" class="btn" />
-			</form>
+			<button class="btn" id="protectec1">Protected 1</button>
+			<button class="btn" id="protectec2">Protected 2</button>
+			<br />
+			<br />
+			<div id="callVote" style="display: none;">
+				<h5>Do you want to call vote?</h5>
+				<button class="btn" id="yesBtn">YES</button>
+				<button class="btn" id="noBtn">NO</button>
+			</div>
+			<div id="votes"></div>
 		</div>
 	</body>
 

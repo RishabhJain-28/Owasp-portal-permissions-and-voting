@@ -27,10 +27,15 @@ const userSchema = new mongoose.Schema({
 		minlength: 8,
 		maxlength: 255,
 	},
+	// permissions: {
+	// 	type: [String],
+	// 	maxlength: 255,
+	// 	expires: 1000 * 60,
+	// },
 });
 
 userSchema.methods.genAuthToken = function () {
-	return jwt.sign({ _id: this._id, email: this.email, name: this.name, position: this.position }, config.get("jwtPrivateKey"));
+	return jwt.sign({ _id: this._id, email: this.email, name: this.name, position: this.position, permissions: this.permissions }, config.get("jwtPrivateKey"));
 };
 
 const User = new mongoose.model("user", userSchema);
